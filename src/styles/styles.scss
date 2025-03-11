@@ -1,0 +1,32 @@
+@use './custom-bootstrap';
+@use './custom-material';
+@use './variables';
+
+html,
+body {
+    box-sizing: border-box;
+    background-color: variables.$white-color;
+
+}
+body {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.app-loading {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #3333;
+    top: 0;
+    left: 0;
+    background-image: url('/imgs/loading.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 999999;
+}

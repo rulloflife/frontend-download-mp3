@@ -1,0 +1,11 @@
+<div class="container">
+    <h2>Download MP3 from YouTube</h2>
+    <input type="text" [formControl]="videoUrl" placeholder="Enter YouTube URL" />
+    <button (click)="downloadMp3()">Download MP3</button>
+
+    @if (downloadLink) {
+        <p>
+            <a [href]="downloadLink" download="audio.mp3">Download Your MP3</a>
+        </p>
+    }
+</div>
