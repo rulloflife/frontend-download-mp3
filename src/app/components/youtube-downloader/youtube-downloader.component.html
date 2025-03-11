@@ -1,11 +1,17 @@
 <div class="container">
-    <h2>Download MP3 from YouTube</h2>
+    <h2>YouTube MP3 Downloader</h2>
+    
     <input type="text" [formControl]="videoUrl" placeholder="Enter YouTube URL" />
-    <button (click)="downloadMp3()">Download MP3</button>
-
-    @if (downloadLink) {
-        <p>
-            <a [href]="downloadLink" download="audio.mp3">Download Your MP3</a>
-        </p>
+    <button (click)="downloadMp3()" [disabled]="isLoading">Download Your MP3</button>
+  
+    @if (isLoading) {
+        <div>Downloading...</div>
     }
-</div>
+    @if (downloadLink) {
+        <div>
+            <p>Download ready:</p>
+            <a [href]="downloadLink" download>Click here to download</a>
+        </div>
+    }
+  </div>
+  

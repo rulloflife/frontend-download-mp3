@@ -22,4 +22,8 @@ export class YoutubeService {
   downloadAudioCoverDetail(videoUrl: string): Observable<any> {
     return this.http.post<any>(`${this.path}/download-image-detail`, { url: videoUrl });
   }
+
+  downloads(videoUrl: string): Observable<any> {
+    return this.http.get<any>(`${this.path}/${videoUrl}`);
+  }
 }
