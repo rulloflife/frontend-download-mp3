@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "downlaod-mp3": {
+    "frontend-download-mp3": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -36,7 +36,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/downlaod-mp3",
+            "outputPath": "dist/frontend-download-mp3",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -117,10 +117,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "downlaod-mp3:build:production"
+              "buildTarget": "frontend-download-mp3:build:production"
             },
             "serve": {
-              "buildTarget": "downlaod-mp3:build:serve"
+              "buildTarget": "frontend-download-mp3:build:serve"
             }
           },
           "defaultConfiguration": "serve"
