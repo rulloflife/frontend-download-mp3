@@ -25,7 +25,7 @@ export class YoutubeDownloaderComponent {
     this.youtubeService.downloadAudioCoverDetail(usl_youtube).subscribe(
       (response) => {
         if (response.success) {
-          this.downloadLink = `http://localhost:5000${response.fileUrl}`;
+          this.downloadLink = `https://backend-download-mp3.onrender.com${response.fileUrl}`;
         } else {
           alert('Download failed: ' + response.error);
         }

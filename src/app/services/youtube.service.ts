@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class YoutubeService {
 
-  private path = 'http://localhost:5000'; // Adjust to your backend URL
+  private path = 'https://backend-download-mp3.onrender.com'; // Adjust to your backend URL
 
   constructor(private http: HttpClient) {
 
