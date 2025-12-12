@@ -1,4 +1,4 @@
 export const environment = {
     production: false,
-    apiBaseUrl: 'https://nssf-ams-core.myplgs.com'
+    apiBaseUrl: 'https://backend-download-mp3.onrender.com'
 };
